@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Propagande</title>
+    <meta name="description" content="La Propagande, groupe de musique." />
+    <script type="module" crossorigin src="/la-propagande-deep-site/assets/index-D5cythzg.js"></script>
+    <link rel="stylesheet" crossorigin href="/la-propagande-deep-site/assets/index-DcltGG89.css">
+  </head>
+  <body>
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <img class="still" src="/la-propagande-deep-site/photo.jpg" alt="Démolition d'un immeuble à Beyrouth, trois hommes assis la regardent." />
+    <div class="fade" aria-hidden="true"></div>
+    <div class="frame" aria-hidden="true"></div>
+    <div class="loader" aria-live="polite">000</div>
+
+    <main>
+      <!-- Textes inventés dans la veine du site de la marque (slogans repris de lapropagande.net). -->
+      <section class="plan plan--photo">
+        <h1 class="slogan">La Propagande</h1>
+        <p class="line">Paris, Beyrouth. Nouvel album, <em>Le Temps des monstres</em>.</p>
+        <button class="tag tag--cta" type="button" data-go="4">Écouter</button>
+      </section>
+
+      <section class="plan plan--bio">
+        <h2 class="slogan" lang="en">Born from revolt</h2>
+        <p class="line">Quatre musiciens entre Paris et Beyrouth. Des guitares sèches comme la poussière, une boîte à rythmes qui ne s'arrête jamais, des textes en trois langues.</p>
+      </section>
+
+      <section class="plan plan--album">
+        <h2 class="slogan" lang="en">Now is the time of monsters</h2>
+        <p class="line"><em>Le Temps des monstres</em>. Neuf titres, sortie le 14 novembre 2026.</p>
+      </section>
+
+      <section class="plan plan--live">
+        <h2 class="slogan" lang="en">Anger is a gift</h2>
+        <ul class="dates">
+          <li><time datetime="2026-11-14">14.11</time> Paris, La Maroquinerie</li>
+          <li><time datetime="2026-11-22">22.11</time> Beyrouth, Metro Al Madina</li>
+          <li><time datetime="2026-12-05">05.12</time> Marseille, Le Molotov</li>
+          <li><time datetime="2026-12-12">12.12</time> Bruxelles, Botanique</li>
+        </ul>
+        <div class="contact">
+          <!-- TODO_CONTENT : vrais contact et Instagram -->
+          <a class="tag" href="mailto:booking@lapropagande.net">booking@lapropagande.net</a>
+          <a class="tag" href="#">Instagram</a>
+        </div>
+      </section>
+
+      <section class="plan plan--tracks" id="ecouter">
+        <h2 class="slogan" lang="en">Dust to dust</h2>
+      </section>
+
+      <section class="plan plan--end">
+        <h2 class="slogan" lang="en">We play the noise</h2>
+        <p class="line">Tout ce qui tombe fait du bruit. Nous jouons ce bruit, en boucle, jusqu'à ce que quelque chose se relève.</p>
+        <p class="credit">Photo AFP, Beyrouth, 13 février 2001. Poussière animée générée d'après la photo.</p>
+      </section>
+
+      <!-- Sur la façade de l'immeuble (ui/facade.ts) : data-at = fenêtre, en pixels de la photo 1200x795. -->
+      <ol class="facade tracks" data-plan="4" aria-label="Titres de l'album">
+        <li data-at="440,202">Le Temps des monstres</li>
+        <li data-at="471,199">Winston</li>
+        <li data-at="504,199" lang="en">Born from revolt</li>
+        <li data-at="440,235">Beyrouth, 13 février</li>
+        <li data-at="470,231" lang="en">Anger is a gift</li>
+        <li data-at="501,230">Poussière</li>
+        <li data-at="439,270">Land Rover</li>
+        <li data-at="467,270" lang="ar-Latn">Ya Leil</li>
+        <li data-at="500,267">Rien ne tient debout</li>
+      </ol>
+      <!-- TODO_CONTENT : vrais liens d'écoute -->
+      <ul class="facade links" data-plan="5" aria-label="Écouter l'album">
+        <li data-at="554,197"><a class="tag" href="#">Bandcamp</a></li>
+        <li data-at="596,214"><a class="tag" href="#">Spotify</a></li>
+        <li data-at="554,233"><a class="tag" href="#">Apple Music</a></li>
+        <li data-at="595,246"><a class="tag" href="#">YouTube</a></li>
+      </ul>
+
+      <div class="track" aria-hidden="true"></div>
+    </main>
+
+
+  </body>
+</html>
